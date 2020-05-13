@@ -1,0 +1,72 @@
+\documentclass{simple_resume}
+\usepackage[colorlinks=true]{hyperref}
+
+\begin{document}
+\restitle{Joseph Sumabat}
+{}
+{\href{https://github.com/josephsumabat/}{https://github.com/josephsumabat/}}
+{\href{to:jrsumabat@uwaterloo.ca}{jrsumabat@uwaterloo.ca}}
+
+\section{Skills}
+\resskillheading
+    {Languages:}
+    {Haskell, Javascript/Typescript, Elm, PHP, C++, Racket, Java, C, Bash, SQL, VBA, Latex}
+    \resskillheading
+    {Tools \& frameworks:}
+    {Stack, Cabal, MySQL, MongoDB, Node.js, Spring, Linux (Solus, Ubuntu), vim, git, docker}
+
+\section{Professional Experience}
+\ressubheading{Ultimate Software}{Jan 2020 - Apr 2020}{Software Developer Co-op - Authentication}{Toronto, ON}
+\begin{itemize}
+  \item Built tenant migration API and fixed existing API bugs in Java Spring using the CQRS model
+  \item Wrote installation and migration scripts in bash
+  \item Implemented customized hashing plugins for OpenDJ using scalable microservices
+\end{itemize}
+
+\ressubheading{Nest Wealth}{May 2019 - Aug 2019}{Software Developer Co-op - Partner Success, Internal Tools}{Toronto, ON}
+\begin{itemize}
+  %\item{Built JSON configurable multi-threaded database PII masking application in Haskell for MySQL and MongoDB}
+  \item{Built JSON configurable multi-threaded database PII masking
+      application in Haskell for MySQL and MongoDB. Replaces specified fields
+      with randomly generated data matching regular expressions and preserves
+    foreign keys allowing production data to be used for debugging.}
+  \item{Implemented extensible caching system for routes decreasing api response times by up to 99\%}
+  \item{Fulfilled client service requests fixing application bugs in AngularJS and Typescript}
+\end{itemize}
+
+\ressubheading{Tulip Retail}{September 2018 - December 2018}{Full-stack Software Developer Co-op}{Kitchener, ON}
+\begin{itemize}
+  \item{Built from proof of concept stage to production ready status a customizable, portable form based user intake system in PHP Laravel, React, and SQL using Typeform API}
+  \item{Designed and built from scratch a dockerized web service with Apple pay integration using Stripe API in Elm and Javascript to be demoed at the National Retail Federation Conference}
+  \item{Updated Salesforce product and customer import system to properly validate data}
+\end{itemize}
+
+
+\ressubheading{Grapevine6}{January 2018 - April 2018}{Full-stack Software Developer Co-op}{Toronto, ON}
+\begin{itemize}
+  \item{Constructed high-volume user registration data pipeline with automatic CSV validation backend and UI benchmarked against 10,000 users}
+  \item{Refactored session management and authentication system to remove possible vulnerabilities}
+  \item{Introduced automated testing framework supporting mock-database and unit test generation script for use with continuous integration}
+  %\item{Designed and implemented admin console UI and functionality in React and Node.js}
+  %\item{Built fault tolerant back-end MongoDB access layer with bitmask based permissions control system to ensure compliance with security policies}
+\end{itemize}
+
+\section{Projects}
+\resprojheading{git-haskell}{Haskell}
+\begin{itemize}
+  \item From-scratch implementation of a subset of git commands in Haskell
+  compatible with vanilla git
+  \item Reads git objects through parser combinators from megaparsec
+\end{itemize}
+
+\resprojheading{G-Arena}{Java}
+\begin{itemize}
+  \item{Created Java based 2-D sidescroller game using swing API}
+  \item{Implemented spritesheet based animations, basic enemies, and hitbox based collision}
+\end{itemize}
+
+\section{Education}
+\ressubheading{University of Waterloo}{2016-Present}
+{Candidate for Honours Bachelor of Computer Science}{Waterloo, ON}
+
+\end{document}
