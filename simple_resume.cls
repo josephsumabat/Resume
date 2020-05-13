@@ -26,7 +26,7 @@
   \subsection[#1]
   {\textbf{#1} \hfill \small{#2}}
   \vspace{-7pt}
-  {\textit{#3} \hfill #4}
+  {\textit{#3} \hfill #4}%
 }
 
 % Alternate heading style - More compact
