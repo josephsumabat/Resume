@@ -1,11 +1,11 @@
 \documentclass{simple_resume}
-\usepackage[colorlinks=true]{hyperref}
+\usepackage[colorlinks=true, allcolors=blue]{hyperref}
 
 \begin{document}
 \restitle{Joseph Sumabat}
-{}
-{\href{https://github.com/josephsumabat/}{https://github.com/josephsumabat/}}
+{\href{https://www.linkedin.com/in/joseph-sumabat}{linkedin.com/in/joseph-sumabat}}
 {\href{to:jrsumabat@uwaterloo.ca}{jrsumabat@uwaterloo.ca}}
+{\href{https://github.com/josephsumabat/}{github.com/josephsumabat/}}
 
 \section{Skills}
 \resskillheading
@@ -18,19 +18,20 @@
 \section{Professional Experience}
 \ressubheading{Ultimate Software}{Jan 2020 - Apr 2020}{Software Developer Co-op - Authentication}{Toronto, ON}
 \begin{itemize}
-  \item Built tenant migration API and fixed existing API bugs in Java Spring using the CQRS model
-  \item Wrote installation and migration scripts in bash
-  \item Implemented customized hashing plugins for OpenDJ using scalable microservices
+  \item Built tenant migration API and fixed existing API bugs in Java Spring using the CQRS model and RabbitMQ
+  \item Implemented customized hashing plugins for OpenDJ in Java using scalable microservices
+  \item Wrote plugin installation and tenant migration scripts in bash
+  \item Deployed client secretes to kubernetes and vault
 \end{itemize}
 
 \ressubheading{Nest Wealth}{May 2019 - Aug 2019}{Software Developer Co-op - Partner Success, Internal Tools}{Toronto, ON}
 \begin{itemize}
-  %\item{Built JSON configurable multi-threaded database PII masking application in Haskell for MySQL and MongoDB}
-  \item{Built JSON configurable multi-threaded database PII masking
-      application in Haskell for MySQL and MongoDB. Replaces specified fields
-      with randomly generated data matching regular expressions and preserves
-    foreign keys allowing production data to be used for debugging.}
-  \item{Implemented extensible caching system for routes decreasing api response times by up to 99\%}
+  \item{Architected and implemented JSON configurable database PII masking application in Haskell for MySQL and MongoDB}
+  %\item{Built JSON configurable multi-threaded database PII masking
+  %    application in Haskell for MySQL and MongoDB. Replaces specified fields
+  %    with randomly generated data matching regular expressions and preserves
+  %  foreign keys allowing production data to be used for debugging.}
+  \item{Implemented extensible caching system for routes decreasing api response times on susbsequent calls by up to 99\%}
   \item{Fulfilled client service requests fixing application bugs in AngularJS and Typescript}
 \end{itemize}
 

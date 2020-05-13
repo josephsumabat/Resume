@@ -1,14 +1,15 @@
-\NeedsTeXFormat{LaTeX2e}
 \ProvidesClass{simple_resume}[12/05/2020 custom CV class]
-\LoadClass{report}
+\LoadClass{article}
 \RequirePackage{titlesec}
 \RequirePackage[margin=0.5in]{geometry}
 \RequirePackage{enumitem}
-\RequirePackage{lmodern}
+\RequirePackage[scaled]{helvet}
 \RequirePackage[T1]{fontenc}
 
-\def\labelitemi{--}
+\pagenumbering{gobble}
 \setlist[itemize,1]{noitemsep, topsep=0pt, partopsep=0pt}
+\renewcommand\labelitemi{\boldmath$\cdot$}
+\renewcommand{\familydefault}{\sfdefault}
 
 \titleformat{\section}
 {\Large\scshape}
@@ -48,10 +49,11 @@
 }
 
 \newcommand{\restitle}[4]{
-  \begin{flushleft}
-    {\huge{#1}}                \hfill #2 \\
-    \hspace{0.25pt} #3         \hfill #4
-  \vspace{-10pt}
-  \end{flushleft}
+  \begin{center}
+    {\huge{#1}} \\
+  \vspace{5pt}
+    #2 \boldmath$\cdot$ #3 \boldmath$\cdot$       #4
+  \vspace{-5pt}
+  \end{center}
 }
 
