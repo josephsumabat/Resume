@@ -4,71 +4,112 @@
 \begin{document}
 \restitle{Joseph Sumabat}
 {\href{https://www.linkedin.com/in/joseph-sumabat}{linkedin.com/in/joseph-sumabat}}
-{\href{to:jrsumabat@uwaterloo.ca}{jrsumabat@uwaterloo.ca}}
+{\href{to:josephrsumabat@gmail.com}{josephrsumabat@gmail.com}}
 {\href{https://github.com/josephsumabat/}{github.com/josephsumabat/}}
 
 \section{Skills}
 \resskillheading
     {Languages:}
-    {Haskell, Javascript/Typescript, Elm, PHP, C++, Racket, Java, C, Bash, SQL, VBA, Latex}
+    {Haskell, Javascript/Typescript, Java , C++, Racket, C, SQL}
     \resskillheading
     {Tools \& frameworks:}
-    {Stack, Cabal, MySQL, MongoDB, Node.js, Spring, Linux (Solus, Ubuntu), vim, git, docker}
+    { Cabal, Postgresql, Linux (Ubuntu), vim, git, nix, docker }
 
 \section{Professional Experience}
+% ---- DUX (Developer Experience) ----
+\ressubheading{Mercury}{Jan 2025 -- Present}{Senior Software Engineer — Backend Developer Experience (DUX)}{New York, NY}
+\begin{itemize}
+  \item Own the \textbf{editor experience for our backend monolith}. Architect/maintain language server eco-system for Haskell at Mercury. Made basic editor features possible on the largest haskell monolith in existence. Further cut editor latency from $\sim$15s to $\sim$100ms
+  \item \textbf{Buck2 build migration:} In charge of public engineer communications and developer user experience. Wrote tooling and performed major refactors across thousands of modules to improve build target graph
+\end{itemize}
+
+% ---- Mobile ----
+\ressubheading{Mercury}{Jan 2023 -- Dec 2024}{Senior Software Engineer — Mobile backend}{New York, NY}
+\begin{itemize}
+  \item \textbf{Push notification infrastructure} Did a full redesign and refactor of push notification API for simplicity and testability adopted by other teams; Performed a Zero-downtime migration from Legacy FCM to \emph{FCM v1}
+  \item \textbf{Authentication:} Drove a major refactor of authentication to enable token-based authentication with Security/User Management - solved long term mobile login issues and enabled future widget experiences.
+  %\item \textbf{Disputes:} Built backend-driven, forward/backward-compatible disputes form API used across platforms.
+  \item \textbf{Mobile type generation:} Maintained Haskell to Swift/Kotlin type generation library 
+\end{itemize}
+
+% ---- Dashboard Experience ----
+\ressubheading{Mercury}{Aug 2021 -- Dec 2022}{Software Engineer — Dashboard Experience \& Payments Backend}{New York, NY}
+\begin{itemize}
+  \item \textbf{Transactions performance:} Designed and implemented cursor-based pagination API abstraction for Haskell; moved counts/totals to dedicated endpoints and bounded render data - improved load of complex queries from $>$3s to $<$300ms for major customers
+  \item \textbf{External API:} Built external API features bringing on clients with roughly 5 million of card spend a year. Designed and implemented API sandbox.
+  \item \textbf{Compile-time documentation generation:} Built Template Haskell-based documentation generation of database schema used by data scientists and risk.
+  \item \textbf{Payments:} Built and maintained payment integrations with multiple partners including Wise and Currency Cloud
+\end{itemize}
+
+\ressubheading {Amazon}{Jun 2020 - Aug 2020}{SDE intern - Sortation}{Toronto, ON}
+%\begin{itemize}
+%\item Designed, implemented, and deployed warehouse sorter tracking and dashboard system integrating services from several
+%different teams using Java and AngularJS on AWS to be used by high-level stakeholders
+%\item Migrated production data and refactored code to make use of Dynamodb indexes to improve query time, performance, and
+%extensibility
+%\end{itemize}
+
 \ressubheading{Ultimate Software}{Jan 2020 - Apr 2020}{Software Developer Co-op - Authentication}{Toronto, ON}
+%\begin{itemize}
+%  \item Built tenant migration API and fixed existing API bugs in Java Spring using the CQRS model and RabbitMQ
+%  \item Implemented customized hashing plugins for OpenDJ in Java using scalable microservices
+%  \item Wrote plugin installation and tenant migration scripts in bash
+%\end{itemize}
+
+%\ressubheading{Nest Wealth}{May 2019 - Aug 2019}{Software Developer Co-op - Partner Success, Internal Tools}{Toronto, ON}
+%\begin{itemize}
+%  \item{Architected and implemented JSON configurable database PII masking application in Haskell for MySQL and MongoDB}
+%  %\item{Built JSON configurable multi-threaded database PII masking
+%  %    application in Haskell for MySQL and MongoDB. Replaces specified fields
+%  %    with randomly generated data matching regular expressions and preserves
+%  %  foreign keys allowing production data to be used for debugging.}
+%  \item{Implemented extensible caching system for routes decreasing api response times on susbsequent calls by up to 99\%}
+%  \item{Fulfilled client service requests fixing application bugs in AngularJS and Typescript}
+%\end{itemize}
+
+% \ressubheading{Tulip Retail}{Sep 2018 - Dec 2018}{Full-stack Software Developer Co-op}{Kitchener, ON}
+% \begin{itemize}
+%   \item{Built from proof of concept stage to production ready status a customizable, portable form based user intake system in PHP Laravel, React, and SQL using Typeform API}
+%   \item{Designed and built from scratch a dockerized web service with Apple pay integration using Stripe API in Elm and Javascript to be demoed at the National Retail Federation Conference}
+%   \item{Updated Salesforce product and customer import system to properly validate data}
+% \end{itemize}
+
+
+% \ressubheading{Grapevine6}{Jan 2018 - Apr 2018}{Full-stack Software Developer Co-op}{Toronto, ON}
+% \begin{itemize}
+%   \item{Constructed high-volume user registration data pipeline with automatic CSV validation backend and UI benchmarked against 10,000 users}
+%   \item{Refactored session management and authentication system to remove possible vulnerabilities}
+%   \item{Introduced automated testing framework supporting mock-database and unit test generation script for use with continuous integration}
+%   %\item{Designed and implemented admin console UI and functionality in React and Node.js}
+%   %\item{Built fault tolerant back-end MongoDB access layer with bitmask based permissions control system to ensure compliance with security policies}
+% \end{itemize}
+
+\section{Open source projects}
+\resprojheading{static-ls}{haskell}
 \begin{itemize}
-  \item Built tenant migration API and fixed existing API bugs in Java Spring using the CQRS model and RabbitMQ
-  \item Implemented customized hashing plugins for OpenDJ in Java using scalable microservices
-  \item Wrote plugin installation and tenant migration scripts in bash
-  \item Deployed client secrets using kubernetes
+  \item Open source performant language server used by hundreds of Haskell devolpers for large scale projects
+\end{itemize}
+\resprojheading{haskell}{hiedb-plugin}
+\begin{itemize}
+  \item GHC plugin to automatically re-index compiler generated tooling information into a sqlite database
 \end{itemize}
 
-\ressubheading{Nest Wealth}{May 2019 - Aug 2019}{Software Developer Co-op - Partner Success, Internal Tools}{Toronto, ON}
-\begin{itemize}
-  \item{Architected and implemented JSON configurable database PII masking application in Haskell for MySQL and MongoDB}
-  %\item{Built JSON configurable multi-threaded database PII masking
-  %    application in Haskell for MySQL and MongoDB. Replaces specified fields
-  %    with randomly generated data matching regular expressions and preserves
-  %  foreign keys allowing production data to be used for debugging.}
-  \item{Implemented extensible caching system for routes decreasing api response times on susbsequent calls by up to 99\%}
-  \item{Fulfilled client service requests fixing application bugs in AngularJS and Typescript}
-\end{itemize}
-
-\ressubheading{Tulip Retail}{Sep 2018 - Dec 2018}{Full-stack Software Developer Co-op}{Kitchener, ON}
-\begin{itemize}
-  \item{Built from proof of concept stage to production ready status a customizable, portable form based user intake system in PHP Laravel, React, and SQL using Typeform API}
-  \item{Designed and built from scratch a dockerized web service with Apple pay integration using Stripe API in Elm and Javascript to be demoed at the National Retail Federation Conference}
-  \item{Updated Salesforce product and customer import system to properly validate data}
-\end{itemize}
-
-
-\ressubheading{Grapevine6}{Jan 2018 - Apr 2018}{Full-stack Software Developer Co-op}{Toronto, ON}
-\begin{itemize}
-  \item{Constructed high-volume user registration data pipeline with automatic CSV validation backend and UI benchmarked against 10,000 users}
-  \item{Refactored session management and authentication system to remove possible vulnerabilities}
-  \item{Introduced automated testing framework supporting mock-database and unit test generation script for use with continuous integration}
-  %\item{Designed and implemented admin console UI and functionality in React and Node.js}
-  %\item{Built fault tolerant back-end MongoDB access layer with bitmask based permissions control system to ensure compliance with security policies}
-\end{itemize}
-
-\section{Projects}
-\resprojheading{git-haskell}{Haskell (Incomplete)}
-\begin{itemize}
-  \item Implementation of a subset of git commands in Haskell compatible with vanilla git
-  \item Additional functionality as a library for reading/writing git objects
-  \item Current progress includes implementation of low-level \verb|cat-file| and \verb|hash-object| commands
-  \item Reads git objects through parser combinators from megaparsec
-\end{itemize}
-
-\resprojheading{G-Arena}{Java}
-\begin{itemize}
-  \item{Created Java based 2-D sidescroller game using swing API}
-  \item{Implemented spritesheet based animations, basic enemies, and hitbox based collision}
-\end{itemize}
+%\resprojheading{git-haskell}{Haskell (Incomplete)}
+%\begin{itemize}
+%  \item Implementation of a subset of git commands in Haskell compatible with vanilla git
+%  \item Additional functionality as a library for reading/writing git objects
+%  \item Current progress includes implementation of low-level \verb|cat-file| and \verb|hash-object| commands
+%  \item Reads git objects through parser combinators from megaparsec
+%\end{itemize}
+%
+%\resprojheading{G-Arena}{Java}
+%\begin{itemize}
+%  \item{Created Java based 2-D sidescroller game using swing API}
+%  \item{Implemented spritesheet based animations, basic enemies, and hitbox based collision}
+%\end{itemize}
 
 \section{Education}
 
-\ressubheading{University of Waterloo}{Sep 2016 - Present}{Candidate for Honours Bachelor of Computer Science}{Waterloo, ON}
+\ressubheading{University of Waterloo}{Sep 2016 - Apr 2021}{Honours Bachelor of Computer Science - Co-op}{Waterloo, ON}
 
 \end{document}
